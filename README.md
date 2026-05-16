@@ -43,11 +43,18 @@ Core endpoints:
 
 ## Deployment Notes
 
-This workspace is ready to deploy, but deployment itself is not performed here.
+Live URLs:
 
-- Frontend: Vercel or Netlify
-- Backend: Render, Railway, Fly.io, or any Node host
-- Set `VITE_API_BASE_URL` in the frontend environment to the deployed API URL
+- Repository: `https://github.com/kumkarpriyanka2626/Order-project`
+- Frontend: `https://ordermanagemenet.netlify.app`
+- Frontend deploy permalink: `https://6a08bb555d10144cffc6bae5--ordermanagemenet.netlify.app`
+- Backend API: `https://food-delivery-order-api.onrender.com`
+
+Deployment targets used:
+
+- Frontend: Netlify
+- Backend: Render
+- Frontend environment variable: `VITE_API_BASE_URL=https://food-delivery-order-api.onrender.com`
 
 ## Publish To GitHub
 
