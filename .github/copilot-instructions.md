@@ -1,0 +1,5 @@
+- Keep the workspace as an npm workspace with `apps/api` and `apps/web`.
+- Preserve the current TypeScript-first setup and use minimal, focused changes.
+- Maintain API validation with Zod and keep order data in memory unless persistence is explicitly requested.
+- Prefer Vitest for both backend and frontend tests.
+- Keep the frontend aligned with the current order flow: menu, cart, checkout, and live status tracking.
