@@ -11,6 +11,21 @@ describe('order API', () => {
     vi.useRealTimers();
   });
 
+  it('returns a root service summary', async () => {
+    const response = await request(app).get('/');
+
+    expect(response.status).toBe(200);
+    expect(response.body).toMatchObject({
+      name: 'Food Delivery Order API',
+      status: 'ok',
+      endpoints: {
+        health: '/api/health',
+        menu: '/api/menu',
+        orders: '/api/orders',
+      },
+    });
+  });
+
   it('returns the menu', async () => {
     const response = await request(app).get('/api/menu');
 

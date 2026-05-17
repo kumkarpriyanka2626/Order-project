@@ -15,6 +15,18 @@ export const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (_request, response) => {
+  response.json({
+    name: 'Food Delivery Order API',
+    status: 'ok',
+    endpoints: {
+      health: '/api/health',
+      menu: '/api/menu',
+      orders: '/api/orders',
+    },
+  });
+});
+
 app.get('/api/health', (_request, response) => {
   response.json({ ok: true });
 });
